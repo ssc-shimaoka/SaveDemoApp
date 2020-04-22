@@ -133,8 +133,9 @@ implements StorageAccessInterface {
         // 保存処理
         // 以下のSharedPreferencesのインスタンス取得にて例外が発生している
         // 例外：java.lang.reflect.InvocationTargetException
+        // nullオブジェクト参照で仮想メソッド 'android.content.SharedPreferences android.content.Context.getSharedPreferences（java.lang.String、int）'を呼び出そうとしました
         // context取得など色々試したが、改善されず・・・。
-
+        
         SharedPreferences pref = getSharedPreferences("Data", MODE_PRIVATE);
         pref.edit().putString("DATA_TYPE_AUTHID", result).apply();
 
