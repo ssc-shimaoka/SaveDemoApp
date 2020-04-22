@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">demo4</string>
+
+    <!--
+        TODO: Aliasに"適切な"名称はあるのだろうか？
+        何となく「システムでユニーク」じゃないといけない気がする
+        のでまぁ、いつものドメイン名さかのぼるアレでやればいいのかなと
+    -->
+    <string name="SecureKeyAlias">key alias sample</string>
+
+    <string name="KeyProviderName">AndroidKeyStore</string>
+    <string name="EncryptAlgorith">RSA/ECB/OAEPWithSHA-256AndMGF1Padding</string>
+</resources>
